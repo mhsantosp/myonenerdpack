@@ -53,13 +53,13 @@ $rojo: #e73827;
 
   .state-red {
     background: $rojo;
-    background: -moz-linear-gradient(top, $rojo 0%, #f02f17 29%, #f6290c 49%, #f16f5c 50%, #f85032 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, $rojo), color-stop(29%, #f02f17), color-stop(49%, #f6290c), color-stop(50%, #f16f5c), color-stop(100%, #f85032));
-    background: -webkit-linear-gradient(top, $rojo 0%, #f02f17 29%, #f6290c 49%, #f16f5c 50%, #f85032 100%);
-    background: -o-linear-gradient(top, $rojo 0%, #f02f17 29%, #f6290c 49%, #f16f5c 50%, #f85032 100%);
-    background: -ms-linear-gradient(top, $rojo 0%, #f02f17 29%, #f6290c 49%, #f16f5c 50%, #f85032 100%);
-    background: linear-gradient(to bottom, $rojo 0%, #f02f17 29%, #f6290c 49%, #f16f5c 50%, #f85032 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$rojo', endColorstr='#f85032', GradientType=0);
+    background: -moz-linear-gradient(top, $rojo 0%, #f6290c 0%, #f02f17 18%, #f85032 39%, #f16f5c 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, $rojo), color-stop(0%, #f6290c), color-stop(18%, #f02f17), color-stop(39%, #f85032), color-stop(100%, #f16f5c));
+    background: -webkit-linear-gradient(top, $rojo 0%, #f6290c 0%, #f02f17 18%, #f85032 39%, #f16f5c 100%);
+    background: -o-linear-gradient(top, $rojo 0%, #f6290c 0%, #f02f17 18%, #f85032 39%, #f16f5c 100%);
+    background: -ms-linear-gradient(top, $rojo 0%, #f6290c 0%, #f02f17 18%, #f85032 39%, #f16f5c 100%);
+    background: linear-gradient(to bottom, $rojo 0%, #f6290c 0%, #f02f17 18%, #f85032 39%, #f16f5c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$rojo', endColorstr='#f16f5c', GradientType=0);
   }
 
   .box-content {
