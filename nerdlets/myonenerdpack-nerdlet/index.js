@@ -6,16 +6,33 @@ export default class MyonenerdpackNerdletNerdlet extends React.Component {
   constructor(props) {
     super (props);
     this.state = {
-      verde: "green",
-      amarillo: "yellow",
-      rojo: "red"
+      clase: "green",
     };
-    console.debug("Nerdlet constructor", this.state); //eslint-disable-line
+  }
+  
+  componentDidMount () {
+    setInterval( () => {
+      var color = this.state.clase;
+
+      if (color == "green") {
+        color = "yellow"
+      }
+      else if (color == "yellow") {
+        color = "red"
+      }
+      else if (color == "red") {
+        color = "green"
+      }
+
+      this.setState ({
+        clase: color
+      })
+    },2000)
   }
 
   render() {
     return <div className="box">
-      <div className={"state-"+this.state.verde}></div>
+      <div className={"state-"+this.state.clase}></div>
       <div className="box-content">
         <div className="msg">
           <label>Message to Update</label>
