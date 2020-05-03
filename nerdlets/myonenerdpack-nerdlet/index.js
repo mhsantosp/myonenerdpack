@@ -4,14 +4,14 @@ import React from 'react';
 
 export default class MyonenerdpackNerdletNerdlet extends React.Component {
   constructor(props) {
-    super (props);
+    super(props);
     this.state = {
       clase: "green",
     };
   }
-  
-  componentDidMount () {
-    setInterval( () => {
+
+  componentDidMount() {
+    setInterval(() => {
       var color = this.state.clase;
 
       if (color == "green") {
@@ -24,15 +24,15 @@ export default class MyonenerdpackNerdletNerdlet extends React.Component {
         color = "green"
       }
 
-      this.setState ({
+      this.setState({
         clase: color
       })
-    },2000)
+    }, 2000)
   }
 
   render() {
     return <div className="box">
-      <div className={"state-"+this.state.clase}></div>
+      <div className={"state-" + this.state.clase}></div>
       <div className="box-content">
         <div className="msg">
           <label>Message to Update</label>
